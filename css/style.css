@@ -6,6 +6,7 @@
   --lucid-color: #e7e9fc;
   --filler-color: #434455;
   --change-color: #404bbf;
+  --customers-svg:#f4f4fd;
 }
 
 body {
@@ -147,7 +148,15 @@ img {
 
 .hero {
   padding: 188px 0;
-  background-color: var(--primary-color);
+  background-color: rgba(46, 47, 66, 0.7);
+  background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  url(../images/people-office.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  
+    
 }
 
 .hero-title {
@@ -157,7 +166,7 @@ img {
   text-align: center;
   font-weight: 700;
   font-size: 56px;
-  line-height: 1;
+  line-height: 1.07;
   margin-bottom: 48px;
   letter-spacing: 0.01em;
   color: var(--accented-color);
@@ -189,6 +198,22 @@ img {
 
 /* ====================== professional qualities ======================  */
 
+.container-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4fd;
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 8px;
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -206,8 +231,6 @@ img {
   display: flex;
   gap: 24px;
 }
-
-
 
 .description {
   font-weight: 400;
@@ -276,6 +299,85 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.description-team {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--filler-color);
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.socail-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:  #4D5AE5;
+}
+
+.socail-link:hover,
+.socail-link:focus {
+  background-color: #404BBF;
+}
+ 
+
+/* ================= CUSTOMER ============== */
+
+.customers-list {
+  display: flex;
+  justify-content:space-between;
+
+}
+ 
+.customer-link {
+display: flex; 
+padding: 16px 32px;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+cursor: pointer;
+
+}
+.customers-icon {
+  fill: var(--customers-svg);
+}
+
+  .customer-link .customers-icon:hover,
+  .customer-link .customers-icon:focus {
+  background-color: #fff;
+  fill: var(--iris);
+  border-color: var(--iris);
+}
+
+ 
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* =================/ CUSTOMER ============== */
+
+
 /* ================================== footer =================================== */
 
 .footer {
@@ -343,9 +445,9 @@ img {
   cursor: pointer;
 }
 
- .button-list :not(:last-child) {
+.button-list :not(:last-child) {
   margin-right: 24px;
-} 
+}
 
 .portfolio-item-btn:hover,
 .portfolio-item-btn:focus {
@@ -357,18 +459,14 @@ img {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  
- column-gap: 24px;
- row-gap: 48px;
-  
+
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
   background-color: var(--accented-color);
-  
 }
-
-
 
 .subtitle-card {
   font-weight: 500;
