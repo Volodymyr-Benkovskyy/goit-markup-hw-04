@@ -6,7 +6,9 @@
   --lucid-color: #e7e9fc;
   --filler-color: #434455;
   --change-color: #404bbf;
-  --customers-svg:#f4f4fd;
+  --color-icon-svg: #8e8f99;
+  --social-foot-color:#ffffff1a;
+  --change-soc-foot-color:#31d0aa;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* ======================= canceled styles =====================*/
+/* ==============  CANCELED STYLE =====================*/
 
 h1,
 h2,
@@ -44,7 +46,9 @@ img {
   list-style: none;
 }
 
-/* ======= container for content =======  */
+/* ============== / CANCELED STYLE / =====================*/
+
+/* =======  CONTAINER FOR CONTENT =======================  */ 
 
 .container {
   width: 1158px;
@@ -57,7 +61,10 @@ img {
   padding: 120px 0;
 }
 
-/* =================== header ======================= */
+/* ======= / CONTAINER FOR CONTENT /=========== =======  */ 
+
+
+/* ===================  HEDER ======================= */
 .header {
   padding: 24px 0;
   background: var(--accented-color);
@@ -81,8 +88,9 @@ img {
 .menu :nth-child(2) {
   margin: 0 40px;
 }
+/* =============== / HEDER  /======================= */
 
-/*  ========================= logo ================ */
+/*  =============== LOGO =========================== */
 .logo-web {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -107,7 +115,9 @@ img {
   transition: all 0.35s ease;
 }
 
-/* ===================== nav menu ====================== */
+/* ============== / LOGO / ============================ */
+
+/* =============== NAV MENU ====================== */
 
 .menu-link {
   font-weight: 500;
@@ -123,7 +133,9 @@ img {
   transition: all 0.35s ease;
 }
 
-/*  =================== contacts ======================= */
+ /* ================ / NAV MENU / ===================== */
+
+/*  ================  CONTACTS ======================= */
 .contacts-link {
   font-size: 16px;
   line-height: 1.5;
@@ -143,20 +155,23 @@ img {
   color: var(--secondary-color);
   transition: all 0.35s ease;
 }
-
-/* ======================= hero  image =========================== */
+  /*  =============== / CONTACTS / ======================== */
+  
+/* =================== HERO IMAGE =========================== */
 
 .hero {
+  max-width: 1440px;
+  margin: auto;
   padding: 188px 0;
   background-color: rgba(46, 47, 66, 0.7);
-  background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-  url(../images/people-office.jpg);
-  background-repeat:no-repeat;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
-  
-    
 }
 
 .hero-title {
@@ -196,7 +211,9 @@ img {
   transition: all 0.35s ease;
 }
 
-/* ====================== professional qualities ======================  */
+/* ========= / HERO IMAGE / =============================== */
+
+/* =========  PROFESSIONAL GUALITIES ======================  */
 
 .container-svg {
   display: flex;
@@ -240,7 +257,9 @@ img {
   color: var(--filler-color);
 }
 
-/* ============ What are we doing ============ */
+/* ============/ PROFESSIONAL GUALITIES / ======================= */
+
+/* ============  WHAT ARE WE DOIHG  ============================ */
 .doing {
   padding-top: 0;
 }
@@ -276,8 +295,9 @@ img {
   letter-spacing: 0.01em;
   color: var(--filler-color);
 }
+/* ============= / WHAT ARE WE DOIHG / =========================*/
 
-/* ======================= Our Team ======================================= */
+/* ============== OUR TEAM  ======================================= */
 .team {
   background-color: var(--selected-color);
 }
@@ -312,7 +332,6 @@ img {
 .social-list {
   display: flex;
   justify-content: space-between;
-
 }
 
 .socail-link {
@@ -322,67 +341,71 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color:  #4D5AE5;
+  background-color:var(--secondary-color);
+}
+
+.icon-social {
+  fill: var(--accented-color);
 }
 
 .socail-link:hover,
 .socail-link:focus {
-  background-color: #404BBF;
+  background-color:var(--change-color);
 }
- 
 
-/* ================= CUSTOMER ============== */
+/* =============== / OUR TEAM / ================================== */
+
+/* ================= CUSTOMERS ==================================== */
 
 .customers-list {
   display: flex;
-  justify-content:space-between;
-
+  gap: 24px;
 }
- 
+
+.customers-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
 .customer-link {
-display: flex; 
-padding: 16px 32px;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-cursor: pointer;
-
-}
-.customers-icon {
-  fill: var(--customers-svg);
-}
-
-  .customer-link .customers-icon:hover,
-  .customer-link .customers-icon:focus {
-  background-color: #fff;
-  fill: var(--iris);
-  border-color: var(--iris);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-icon-svg);
+  border-radius: 4px;
+  fill: var(--color-icon-svg);
+  background-color: var(--accented-color);
 }
 
- 
+.contacts-link:focus,
+.customer-link:hover {
+  border-color: var(--change-color);
+}
+.contacts-link:focus,
+.customer-link:hover {
+  fill: var(--change-color);
+}
 
+/* ============== / CUSTOMERS / =================================== */
 
-
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-/* =================/ CUSTOMER ============== */
-
-
-/* ================================== footer =================================== */
+/* ==============   FOOTER  =================================== */
 
 .footer {
   background-color: var(--primary-color);
   padding: 100px 0;
+}
+
+.footer-social-container {
+  display: flex;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  color:var(--accented-color);
 }
 
 .logo-footer {
@@ -420,7 +443,30 @@ cursor: pointer;
   color: var(--lucid-color);
 }
 
-/* ======================================== portfolio style ============================ */
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--social-foot-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--change-soc-foot-color);
+}
+
+/* ================== / FOOTER / ====================== */
+
+/* =================  PORTFOLIO  ================  */
 .section-portfolio {
   padding: 96px 0 120px;
 }
@@ -456,16 +502,21 @@ cursor: pointer;
   transition: all 0.35s ease;
 }
 
-.portfolio {
+/* ================== CARD SET ================ */
+
+.portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
-
   column-gap: 24px;
   row-gap: 48px;
 }
 
 .portfolio-item {
   background-color: var(--accented-color);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .subtitle-card {
@@ -483,3 +534,7 @@ cursor: pointer;
   border-right: 1px solid var(--lucid-color);
   border-bottom: 1px solid var(--lucid-color);
 }
+
+/* =========== / CARD SET / =========================== */
+
+/* =========== / PORTFOLIO / ======================= */
